@@ -1,0 +1,77 @@
+{
+    "version": "2.0.0",
+    "options": {
+        "shell": {
+            "executable": "/bin/bash",
+            "args": [
+                "-lc"
+            ]
+        }
+    },
+    "tasks": [
+        {
+            "label": "ESP-IDF: Build",
+            "type": "shell",
+            "command": "idf.py build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always",
+                "clear": true,
+                "close": true
+            }
+        },
+        {
+            "label": "ESP-IDF: Flash",
+            "type": "shell",
+            "command": "idf.py flash",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always",
+                "clear": true,
+                "close": true
+            }
+        },
+        {
+            "label": "ESP-IDF: Monitor",
+            "type": "shell",
+            "command": "idf.py monitor",
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always",
+                "clear": true
+            }
+        },
+        {
+            "label": "ESP-IDF: Flash + Monitor",
+            "type": "shell",
+            "command": "idf.py flash monitor",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "runOptions": {
+                "instanceLimit": 1
+            },
+            "presentation": {
+                "panel": "dedicated",
+                "reveal": "always",
+                "clear": true,
+                "close": true
+            }
+        }
+    ]
+}
