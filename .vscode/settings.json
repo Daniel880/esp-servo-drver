@@ -1,0 +1,19 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPath": "/opt/esp/idf",
+  "idf.toolsPath": "/opt/esp",
+  "idf.pythonInstallPath": "/usr/bin/python3",
+  "idf.flashType": "UART",
+  "files.associations": {
+    "gap.h": "c",
+    "gatt_svc.h": "c"
+  },
+  "idf.monitorPort": "/dev/ttyUSB0",
+  "idf.port": "/dev/ttyUSB0",
+  "idf.openOcdConfigs": [
+    "board/esp32-wrover-kit-3.3v.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  }
+}
